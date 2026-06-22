@@ -109,6 +109,12 @@
   .note{margin-top:14px;font-size:14.5px;color:var(--text);line-height:1.55;background:var(--ac-bg);border-radius:10px;padding:13px 16px;}
   .note b{color:var(--ac-tx);font-weight:600;}
 
+  /* SCREENSHOT FIGURE */
+  .shot{margin-top:16px;border:1px solid var(--border);border-radius:10px;overflow:hidden;background:var(--surface);box-shadow:0 1px 6px rgba(0,0,0,0.04);}
+  .shot img{width:100%;display:block;}
+  .shot.sm{max-width:360px;}
+  .shot .cap{font-family:var(--mono);font-size:11px;color:var(--muted);padding:8px 13px;border-top:1px solid var(--border);letter-spacing:0.02em;}
+
   /* TABLE */
   .tablewrap{margin-top:8px;overflow-x:auto;border:1px solid var(--border);border-radius:12px;}
   table{border-collapse:collapse;width:100%;min-width:560px;background:var(--surface);}
@@ -216,6 +222,7 @@
             <p>Gå till nedladdningssidan och hämta appen för ditt system. Sidan känner oftast av om du har Windows eller Mac.</p>
             <a class="linkbtn" href="https://claude.com/download" target="_blank" rel="noopener">Ladda ner Claude-appen
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <div class="shot"><img src="img-download.png" alt="Nedladdningssidan claude.com/download med nedladdningsknappar"><div class="cap">Nedladdningssidan: claude.com/download</div></div>
           </div>
         </div>
 
@@ -243,6 +250,7 @@
           <div>
             <h4>Öppna fliken Code</h4>
             <p>Längst upp finns tre flikar: <span class="cmd">Chat</span>, <span class="cmd">Cowork</span> och <span class="cmd">Code</span>. Tryck på <b>Code</b>.</p>
+            <div class="shot sm"><img src="img-app-tabs.png" alt="Flikarna Chat, Cowork och Code i Claude-appen"><div class="cap">Flikarna i appen, välj Code</div></div>
           </div>
         </div>
 
@@ -284,6 +292,7 @@
             <p>I VS Code, tryck <span class="cmd">Ctrl+Shift+X</span> (Mac: <span class="cmd">Cmd+Shift+X</span>) för att öppna Extensions. Sök på <b>Claude Code</b> och välj det från <b>Anthropic</b>, tryck Install. Du kan också installera direkt från Marketplace:</p>
             <a class="linkbtn" href="https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code" target="_blank" rel="noopener">Öppna tillägget i Marketplace
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <div class="shot"><img src="img-market.png" alt="Claude Code-tillägget i VS Code Marketplace med den gröna Install-knappen"><div class="cap">Tillägget i Marketplace, tryck Install</div></div>
           </div>
         </div>
 
@@ -364,6 +373,7 @@
             <div class="code"><div class="code-bar"><span class="lbl">Terminal</span><button class="code-copy" type="button">Kopiera</button></div><pre>cd sokvag/till/ditt/projekt
 claude</pre></div>
             <p>Skriv sen din fråga, till exempel <span class="cmd">vad gör det här projektet?</span></p>
+            <div class="shot"><img src="img-terminal.png" alt="Claude Code som startar i terminalen med en välkomstbanner"><div class="cap">Så ser det ut när Claude startar</div></div>
           </div>
         </div>
 
