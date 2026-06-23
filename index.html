@@ -289,7 +289,9 @@
           <div class="step-n">2</div>
           <div>
             <h4>Installera tillägget "Claude Code"</h4>
-            <p>I VS Code, tryck <span class="cmd">Ctrl+Shift+X</span> (Mac: <span class="cmd">Cmd+Shift+X</span>) för att öppna Extensions. Sök på <b>Claude Code</b> och välj det från <b>Anthropic</b>, tryck Install. Du kan också installera direkt från Marketplace:</p>
+            <p>I VS Code, tryck <span class="cmd">Ctrl+Shift+X</span> (Mac: <span class="cmd">Cmd+Shift+X</span>) för att öppna Extensions. Sök på <b>claude</b>, välj "Claude Code" från <b>Anthropic</b> och tryck Install.</p>
+            <div class="shot sm"><img src="img-search.png" alt="Sökning på claude i VS Code Extensions, Claude Code av Anthropic överst"><div class="cap">Sök på claude i Extensions, välj Anthropic</div></div>
+            <p>Eller installera direkt från Marketplace:</p>
             <a class="linkbtn" href="https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code" target="_blank" rel="noopener">Öppna tillägget i Marketplace
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
             <div class="shot"><img src="img-market.png" alt="Claude Code-tillägget i VS Code Marketplace med den gröna Install-knappen"><div class="cap">Tillägget i Marketplace, tryck Install</div></div>
@@ -336,10 +338,23 @@
         <div class="step">
           <div class="step-n">1</div>
           <div>
+            <h4>Öppna terminalen</h4>
+            <p class="os">Windows</p>
+            <p>Öppna Startmenyn, sök på <b>Terminal</b> eller <b>PowerShell</b>, och öppna den. Ett fönster med en textrad dyker upp.</p>
+            <p class="os">Mac</p>
+            <p>Tryck <span class="cmd">Cmd+Mellanslag</span>, skriv <b>Terminal</b> och tryck Enter.</p>
+            <div class="shot"><img src="img-open-terminal.png" alt="Ett nyöppnat terminalfönster"><div class="cap">Ett nyöppnat terminalfönster</div></div>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-n">2</div>
+          <div>
             <h4>Installera Claude Code</h4>
             <p>Anthropic rekommenderar installeraren nedan, den uppdaterar sig själv. Kör raden som matchar ditt system.</p>
             <p class="os">Windows (PowerShell)</p>
             <div class="code"><div class="code-bar"><span class="lbl">PowerShell</span><button class="code-copy" type="button">Kopiera</button></div><pre>irm https://claude.ai/install.ps1 | iex</pre></div>
+            <div class="shot"><img src="img-install-cmd.png" alt="Installationskommandot inskrivet i PowerShell"><div class="cap">Klistra in kommandot och tryck Enter</div></div>
             <p class="os">Mac (och Linux)</p>
             <div class="code"><div class="code-bar"><span class="lbl">Terminal</span><button class="code-copy" type="button">Kopiera</button></div><pre>curl -fsSL https://claude.ai/install.sh | bash</pre></div>
             <div class="note"><b>Föredrar du en pakethanterare?</b> Windows: <span class="cmd">winget install Anthropic.ClaudeCode</span>. Mac: <span class="cmd">brew install --cask claude-code</span>. Har du Node.js: <span class="cmd">npm install -g @anthropic-ai/claude-code</span>. De uppdaterar inte automatiskt.</div>
@@ -347,7 +362,7 @@
         </div>
 
         <div class="step">
-          <div class="step-n">2</div>
+          <div class="step-n">3</div>
           <div>
             <h4>Kontrollera att det funkar</h4>
             <p>Öppna en ny terminal och kör:</p>
@@ -357,7 +372,7 @@
         </div>
 
         <div class="step">
-          <div class="step-n">3</div>
+          <div class="step-n">4</div>
           <div>
             <h4>Logga in</h4>
             <p>Kör <span class="cmd">claude</span>. Första gången öppnas webbläsaren där du loggar in. Sen är du inloggad och slipper göra om det.</p>
@@ -366,7 +381,7 @@
         </div>
 
         <div class="step">
-          <div class="step-n">4</div>
+          <div class="step-n">5</div>
           <div>
             <h4>Starta i ditt projekt</h4>
             <p>Gå till mappen för projektet och starta Claude där:</p>
@@ -378,7 +393,7 @@ claude</pre></div>
         </div>
 
         <div class="step">
-          <div class="step-n">5</div>
+          <div class="step-n">6</div>
           <div>
             <h4>Kommandon att börja med</h4>
             <p><span class="cmd">/init</span> skapar en CLAUDE.md med regler för projektet. <span class="cmd">/help</span> visar allt. <span class="cmd">Shift+Tab</span> slår på planläget (Claude planerar innan den ändrar). <span class="cmd">/clear</span> rensar chatten. <span class="cmd">/exit</span> avslutar.</p>
